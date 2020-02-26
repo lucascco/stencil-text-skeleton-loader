@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/stencil-text-skeleton-loader.esm.js"></script>
+  <script nomodule src="/build/stencil-text-skeleton-loader.js"></script>
+  <style>
+    :root {
+      --text-skeleton-loader-width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <text-skeleton-loader id="text-skeleton-loader" loading="true">Finish Test skeleton loader</text-skeleton-loader>
+
+  <script>
+    const wc = document.getElementById('text-skeleton-loader');
+    setTimeout(() => wc.setAttribute('loading', false), 3000);
+  </script>
+
+</body>
+</html>

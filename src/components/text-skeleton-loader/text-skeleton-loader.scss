@@ -1,0 +1,37 @@
+.text-skeleton-loader {
+  display: inline-block;
+  width: var(--text-skeleton-loader-width, 30px);
+  height: var(--text-skeleton-loader-height, 20px);
+  &.-is-loading {
+    color: transparent;
+    background-color: rgb(150, 159, 170);
+    animation: bg-color 2s ease infinite;
+  }
+}
+
+@keyframes bg-color {
+	0% {
+		background-color: rgba(150, 159, 170, 0);
+  }
+  10% {
+		background-color: rgba(150, 159, 170, 0.10);
+  }
+  15% {
+		background-color: rgba(150, 159, 170, 0.15);
+  }
+  20% {
+		background-color: rgba(150, 159, 170, 0.20);
+  }
+  30% {
+		background-color: rgba(150, 159, 170, 0.30);
+  }
+  45% {
+		background-color: rgba(150, 159, 170, 0.45);
+	}
+	60% {
+		background-color: rgba(150, 159, 170, 0.60);
+  }
+  75% {
+		background-color: rgba(150, 159, 170, 0.75);
+	}
+}
